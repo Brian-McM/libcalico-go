@@ -114,6 +114,8 @@ func (c *FelixNodeUpdateProcessor) Process(kvp *model.KVPair) ([]*model.KVPair, 
 		}
 	}
 
+	log.WithField("node", node).Debug("brianmark")
+
 	// Return the add/delete updates and any errors.
 	return []*model.KVPair{
 		{
